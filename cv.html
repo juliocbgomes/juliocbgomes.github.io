@@ -1,0 +1,406 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.ico">
+  <title>.::CV - Júlio César::.</title>
+  <link rel="stylesheet" href="fonts/css/fontello.css">
+  <style>
+    body {
+      font-size: 16px;
+      background-color: #000000;
+      margin: 0;
+    }
+    table{
+      font-family: sans-serif;
+      color: #FFFFFF;
+			margin-top: 3em;
+    }
+    .title {
+      font-size: 3em;
+      padding: 1em 0 0 0;
+      color: #ED8F03;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      padding: 0 0 2em 0;
+      color: #ED8F03;
+    }
+
+    .contatos {
+      font-weight: 600;
+      line-height: 1.5em;
+      padding: 1em 0;
+    }
+
+    img {
+      width: 2em;
+      height: 2em;
+    }
+    
+    .padding-left{
+      padding: 0 0 0 2.2em;
+    }
+
+    .cabecalho {
+      font-weight: 600;
+      padding: .5em 1em 0 0;
+    }
+
+    .height15 {
+      height: 1em;
+    }
+
+    .height20 {
+      height: 20px;
+    }
+
+    .desc {
+      padding: 0 1em 0 2.5em;
+    }
+    .titulo-li{
+      padding: 0em;
+      font-weight: 600;
+      font-size: 1.2em;
+      color: #ED8F03;
+    }
+    .empresa{
+      padding: 0;
+      font-size: 1.1em;
+      display: block;
+			font-weight: 600;
+    }
+    p{
+      font-size: .9em;
+      padding: 0 1em;
+      line-height: 1.5em;
+      margin: 0em;
+    }
+    .padding-title{
+      padding: 0 0 0 2.5em;
+      font-weight: 600;
+    }
+    .padding-right{
+      padding: 0 2em 0 1em;
+    }
+    .barra{
+      font-size: 2em;
+      font-weight: 100;
+    }
+    .padding-top{
+      padding: 1em 0 0 0;
+    }
+		.padding-top-list{
+			padding: 2em 0 0 0;
+		}
+		
+    .formacao{
+      font-weight: 600;
+      font-size: 1.5em;
+			padding: 0 .5em;
+    }
+    .desc-formacao{
+      font-weight: 600;
+      padding: 0 1em;
+    }
+    ul{
+      color: #FFFFFF;
+    }
+    button{
+			position: absolute;
+			top: 1em;
+			left: 12em;
+			width: 8.5em;
+			background-color: #04B4AE;
+			outline: none;
+			position: relative;
+			border: 0;				
+			padding: .75em;
+			text-align: left;
+			font-weight: 600;
+			font-size: 1em;
+			color: #FFFFFF;
+			border-radius: .3em;
+			cursor: pointer;
+			z-index: 1;
+			transition: background-color .5s ease;
+		}		
+		button:hover{
+			background-color: rgba(4,180,174, 0.8);
+		}
+		button:hover + .tooltip{
+			opacity: 1;
+			margin-left: 0em;				
+		}
+		button::after{
+			font-family: 'fontello';
+			content: '\f0c5';												
+			font-size: 1.5em;
+			position: absolute;
+			bottom: .4em;
+			right: .5em;
+		}			
+		.anima-button::after{
+			animation: animacao-button .5s ease;
+		}
+
+		@keyframes animacao-button{
+			0%{
+				opacity: 1;
+			}
+			33%{
+				opacity: 0;
+				transform: translateX(0);
+			}
+			66%{
+				opacity: 0;
+				transform: translateY(-1em);					
+			}
+			100%{
+				opacity: 1;					
+				transform: translateY(0);					
+			}
+		}
+		.tooltip{
+			position: absolute;
+			top: 1em;
+			left: 21em;
+			width: 30em;
+			height: 6.5em;
+			border-radius: .2em;				
+			background-color: rgba(4,180,174,0.5);
+			font-size: 1em;
+			font-weight: 600;
+			text-align: left;
+			padding: .5em 0 0 .8em;				
+			font-family: sans-serif;							
+			z-index: 0;
+			color: #FFFFFF;
+			opacity: 0;
+			margin-left: -3em;
+			transition: opacity .5s ease, margin-left .5s ease;
+		}
+		.tooltip::before{
+			content: '';
+			position: absolute;
+			top: .8em;
+			left: -1em;
+			border-style: solid;
+			border-width: .5em;
+			border-color: transparent rgba(4,180,174,0.5) transparent transparent;				
+		}
+		@media (max-width: 890px){
+			.tooltip{
+				top: 5em;
+				left: 11.5em;
+				margin-left: 0;
+				margin-top: -3em;
+				transition: opacity .5s ease, margin-top .5s ease;
+			}		
+			.tooltip::before{
+				top: -1em;
+				left: .5em;
+				border-color: transparent transparent rgba(4,180,174,0.5) transparent;				
+			}
+			
+			button:hover + .tooltip{
+				opacity: 1;
+				margin-top: 0em;				
+			}
+		}
+		.lista-tooltip{
+			font-size: .9em;						
+			padding-left: 1em;
+			list-style: decimal;
+		}
+		.cv{
+			font-size: 5em;				
+		}
+		#downloadCV{
+			position: absolute;
+			top: 1em;
+			left: 1.5em;
+			background-color: rgb(238,99,99); /*#04B4AE*/
+			width: 8em;			
+			padding: .75em;
+			font-weight: 600;
+			color: #FFFFFF;
+			font-family: sans-serif;
+			text-decoration: none;
+			border-radius: .3em;
+			transition: background-color .5s ease;
+		}
+		#downloadCV:hover{
+			background-color: rgba(238,99,99, 0.8);
+		}
+		#downloadCV::after{
+			font-family: 'fontello';
+			content: '\e809';
+			position: absolute;
+			right: .7em;
+			border-bottom: solid .05em;
+		}
+  </style>
+</head>
+
+<body>
+	<a id="downloadCV" href="CV-Julio-Cesar.docx" download="CV-Julio-Cesar.docx">Download CV</a>
+  <button id="btnCV" type="button">Copiar CV</button>
+  <span id="tooltip" class="tooltip">Envie meu CV no formato de email marketing para algum amigo clicando no botão Copiar CV.
+		<ul class="lista-tooltip">
+			<li>Clique no botão Copiar CV.</li>
+			<li>Crie um novo email e use as teclas de colar (CTRL+V) no corpo do email que irá enviar para seu amigo. Pronto!</li>				
+		</ul>
+		<a id="fechar" href="javascript:"></a>
+  </span>
+  <center>     
+    <table id="tabela" cellpadding="0" cellspacing="0" border="0" bgcolor="#243B55" align="center" width="100%">
+      <tbody>
+        <tr>
+					<td class="cv" align="center" rowspan="4" width="200" bgcolor="#141E30">CV</td>
+					<td colspan="5" class="padding-title">
+						<p class="title">Júlio Gomes</p>
+						<p class="subtitle">Desenvolvedor Front-End</p>
+					</td>
+				</tr> 
+        <tr>
+          <td width="40" class="padding-left"><img src="https://png.icons8.com/color/2x/whatsapp.png" alt="telefone"></td>
+          <td class="contatos" colspan="2">(11) 96442-2996</td>
+          <td style="padding-left: 7.6em;" width="40"><img src="https://png.icons8.com/color/2x/gmail.png" alt="gmail"></td>
+          <td class="contatos">juliok500@gmail.com</td>
+        </tr>
+        <tr>
+          <td width="40" class="padding-left"><img src="https://png.icons8.com/color/2x/facebook.png" alt="facebook"></td>
+          <td class="contatos" colspan="2"><span class="barra"> /</span> JulioCBGomes</td>
+          <td style="padding-left: 7.6em;" width="40"><img src="https://png.icons8.com/color/2x/linkedin.png" alt="linkedin"></td>
+          <td class="contatos"><span class="barra">/</span> julio-cesar-gomes</td>
+        </tr>
+        <tr class="height20"></tr>
+        <tr>
+          <td bgcolor="#ED8F03" class="height15"></td>
+          <td rowspan="2" colspan="5" class="desc">
+            <p class="formacao">Centro Universitário Fundação Santo André</p>
+            <p class="desc-formacao">Graduação - Sistemas de Informação</p>
+            <p class="desc-formacao">2010 - 2013</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="cabecalho" valign="top" align="center" rowspan="2" bgcolor="#141E30">FORMAÇÃO</td>
+        </tr>
+        <tr class="height20"></tr>
+        <tr>
+          <td bgcolor="#ED8F03" class="height15"></td>
+          <td rowspan="2" colspan="2">
+            <ul>
+              <li><span class="titulo-li">HTML e CSS</span></li>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Web Design Responsivo</li>
+                <li>Flexbox</li>
+                <li>Acessibilidade Web</li>
+                <li>Bootstrap</li>
+                <li>Email Marketing</li>
+              </ul>
+            </ul>
+          </td>
+          <td rowspan="2" colspan="2" valign="top">
+            <ul>
+              <li><span class="titulo-li">JAVASCRIPT</span></li>
+              <ul>
+                <li>Javascript</li>
+                <li>JQuery</li>
+                <li>Expressões Regulares</li>
+              </ul>
+            </ul>
+          </td>
+          <td rowspan="2" valign="top" width="300">
+            <ul>
+              <li><span class="titulo-li">Frameworks MVC, automação e performance</span></li>
+              <ul>
+                <li>AngularJS</li>
+                <li>Gulp</li>
+                <li>SASS</li>
+              </ul>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="cabecalho" valign="top" align="center" rowspan="2" bgcolor="#141E30">QUALIFICAÇÕES</td>
+        </tr>
+        <tr class="height20"></tr>
+        <tr>
+          <td bgcolor="#ED8F03" class="height15"></td>
+          <td rowspan="2" colspan="5">
+            <ul>
+             <li class="padding-top"><span class="titulo-li">BRQ</span></li>
+              <p>6 anos (atual)</p>
+              <p>São Paulo - Centro</p>
+              <ul>
+                <li><span class="empresa padding-top">Desenvolvedor Front-End</span></li>
+								<p>jan de 2018 – o momento</p>
+								<p>Desenvolvimento e manutenção de páginas web para o banco Itaú atendendo as diretrizes de acessibilidade para conteúdo web.</p>
+                  
+								<li><span class="empresa padding-top">Administrador Jira</span></li>
+								<p>mar de 2016 – jan de 2018 (1 anos e 11 meses)</p>
+								<p class="padding-right">Sustentação da ferramenta JIRA, bem como configuração de projetos, fluxos de trabalho, painéis de gerenciamento e dashboards no modelo Scrum e Kanban.</p>
+             
+             		<li><span class="empresa padding-top">Auxiliar administrativo</span></li>
+                <p>abr de 2013 – fev de 2016 (2 anos e 11 meses)</p>
+                <p class="padding-right">Geração de relatórios e indicadores, entrega de demandas no sistema de controle de fábrica do Itaú, multiplicador dos processos referente a solicitações de acessos, qualidade e documentação do cliente.</p>
+              </ul>
+                
+              <li class="padding-top-list"><span class="titulo-li">Analista de Suporte</span></li>
+              <span class="empresa">Tecnocomp Tecnologia e Serviços</span>
+							<p>jan de 2011 – dez de 2012 (2 anos)</p>
+							<p>São Bernardo do Campo</p>
+							<p class="padding-right">Atendimento em primeiro nível dando suporte a configurações de sistemas, instalações de softwares e orientando os usuários da empresa Avon na utilização.</p>
+                
+							<li class="padding-top-list"><span class="titulo-li">Técnico de Campo</span></li>
+							<span class="empresa">Tips Tecnologia</span>
+							<p>mar de 2009 – out de 2010 (1 ano e 8 meses)</p>
+							<p>São Paulo - Saúde</p>
+							<p>Atendimento de helpdesk, montagem e manutenção de computadores.</p>                
+              
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="cabecalho" valign="top" align="center" bgcolor="#141E30">EXPERIÊNCIA</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>		
+			btnCV.addEventListener('click', animaButton)
+			btnCV.addEventListener('click', copiaTabela)
+			downloadCV.addEventListener('click', animaButton)		
+		
+			function selectElementContents(el) {
+				var range;
+				if (window.getSelection && document.createRange) {
+					range = document.createRange();
+					var sel = window.getSelection();
+					range.selectNodeContents(el);
+					sel.removeAllRanges();
+					sel.addRange(range);
+				}
+			}
+
+			function copiaTabela() {					
+				selectElementContents(document.getElementById("tabela"));
+				document.execCommand('copy');					
+			}
+		
+			function animaButton(){
+				var th = this;
+				th.classList.add("anima-button");
+				setTimeout(function(){ th.classList.remove("anima-button"); }, 500);
+			}
+		</script>
+</body>
+
+</html>

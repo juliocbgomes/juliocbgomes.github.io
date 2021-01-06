@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<title>.::Julio Cesar | Front-end::.</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/css/fontello.css">	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header tabindex="0">	
+			<a href="portfolio.html" class="menu-header simple-version" target="_blank" style="text-decoration: none;"><span class="txt-simple-version">versão simples</span></a>
+			<button class="menu-header contraste"></button>	
+	</header>
+	<nav>
+		<button class="items-painel sobre" name="sobre">
+			<h2 class="titulo-painel"><span class="anima-titulo1">SOBRE</span></h2>
+			<span class="icone street" aria-hidden="true"></span>
+			<span class="icone briefcase" aria-hidden="true"></span>			
+			<span class="icone graduation" aria-hidden="true"></span>			
+		</button>	
+
+		<button class="items-painel skill" name="skill">
+			<h2 class="titulo-painel"><span class="anima-titulo2">SKILLS</span></h2>
+			<span class="icone html" aria-hidden="true"></span>
+			<span class="icone code" aria-hidden="true"></span>			
+			<span class="icone css" aria-hidden="true"></span>
+			<span class="icon-skills bar1" aria-hidden="true"></span>
+			<span class="icon-skills bar2" aria-hidden="true"></span>
+			<span class="icon-skills bar3" aria-hidden="true"></span>
+		</button>
+
+		<button class="items-painel contato" name="contato">
+			<h2 class="titulo-painel"><span class="anima-titulo3">CONTATO</span></h2>
+			<span class="icone telephone" aria-hidden="true"></span>
+			<span class="icone mail" aria-hidden="true"></span>			
+			<span class="icone linkin" aria-hidden="true"></span>
+		</button>
+	</nav>
+	<main>
+		<!-- SOBRE -->
+		<section id="sobre" class="sobre-content">
+			
+			<div class="container">
+        <h1 class="title-content">SOBRE</h1>
+        <img src="img/julio.jpg" alt="" class="julio">
+        <h2>Júlio César</h2>
+        <div class="container-sobre">
+					<p>Graduado em Sistemas de Informação no ano de 2013 pelo centro universitário Fundação Santo André.</p>
+					<p>Como desenvolvedor Front-End, gosto de usar minha atenção obsessiva aos detalhes, sou autodidata e estou sempre buscando aprender novas tecnologias.</p>
+        </div>
+			</div>
+			<button class="fechar-sobre"></button>
+		</section>
+
+		<!-- SKILLS -->
+		<section id="skill" class="content-item">
+			<div class="container">
+				<h1 class="title-content">SKILLS</h1>
+				<div class="flex-skill">
+					<div class="box-skill">
+						<h3 class="subtitle-skills">HTML e CSS</h3>
+						<button class="seta-skill"></button>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>WEBDESIGN RESPONSIVO</li>
+							<li>FLEXBOX</li>
+							<li>BOOTSTRAP</li>
+							<li>ACESSIBILIDADE WEB</li>
+							<li>EMAIL MARKETING</li>
+							<li>CORDOVA</li>
+						</ul>	
+					</div>
+					<div class="box-skill">
+						<h3 class="subtitle-skills">JAVASCRIPT</h3>
+						<button class="seta-skill"></button>
+						<ul>
+							<li>JAVASCRIPT</li>
+							<li>JQUERY</li>
+							<li>EXPRESSÕES REGULARES</li>
+							<li>TYPESCRIPT</li>							
+						</ul>
+					</div>
+					<div class="box-skill">
+						<h3 class="subtitle-skills txt-align-left">FRAMEWORK MVC,<br>AUTOMAÇÃO & PERFORMANCE</h3>
+						<button class="seta-skill"></button>
+						<ul>
+							<li>ANGULAR</li>
+							<li>SASS</li>
+							<li>GULP</li>							
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<button class="fechar-skill"></button>
+		</section>
+
+		<!-- CONTATO -->
+		<section id="contato" class="content-item">
+			<div class="container">
+				<h1 class="title-content">CONTATO</h1>
+				<span class="title-contato">Entre em contato pelo telefone</span>
+				<span class="telefone">(11) 96442-2996</span>	
+				<span class="title-contato">Ou envie um e-mail para</span>
+				<span class="email">juliok500@gmail.com</span>
+				<span class="title-contato">Me siga nas redes sociais</span>
+				<a href="https://www.facebook.com/JulioCBGomes" class="contatos face" target="_blank" style="text-decoration: none;"><span class="hidden">facebook</span></a>
+				<a href="https://www.linkedin.com/in/julio-cesar-brito-gomes-baaab915b/" class="contatos linkd" target="_blank" style="text-decoration: none;"><span class="hidden">linkedin</span></a>
+			</div>					
+			<button class="fechar-contato"></button>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="content-footer">
+			<a href="https://www.facebook.com/JulioCBGomes" class="redes-sociais facebook anima-facebook" target="_blank" style="text-decoration: none;"></a>
+			<a href="https://www.linkedin.com/in/julio-cesar-brito-gomes-baaab915b/" class="redes-sociais linkedin" target="_blank" style="text-decoration: none;"></a>
+			<button class="redes-sociais whatsapp"><span class="tel">(11) 96442-2996</span></button>
+		</div>
+	</footer>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/sobre.js"></script>
+	<script src="js/skill.js"></script>	
+	<script src="js/contato.js"></script>
+</body>
+
+</html>

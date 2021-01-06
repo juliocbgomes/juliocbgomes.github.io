@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=10, chrome=1" />
+    <title>.:: Skina do Açaí ::.</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/cssacai/fontello.css">
+	<link rel="stylesheet" href="css/acai.css">
+</head>
+
+<body class="container">
+	<button class="icone-troco"></button>
+		<section class="flex">
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Açaí P</p>
+					<p style="margin-top: 5px;">300 ml - R$ <span class="valor">9.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Açaí M</p>
+					<p style="margin-top: 5px;">400 ml - R$ <span class="valor">12.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Açaí G</p>
+					<p style="margin-top: 5px;">500 ml - R$ <span class="valor">14.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Açaí GG</p>
+					<p style="margin-top: 5px;">1 L - R$ <span class="valor">25.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>			
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Barca</p>
+					<p style="margin-top: 5px;">R$ <span class="valor">25.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Suco Açaí</p>
+					<p style="margin-top: 5px;">500 ml - R$ <span class="valor">10.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Shake Açaí</p>
+					<p style="margin-top: 5px;">500 ml - R$ <span class="valor">12.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Bomba Açaí</p>
+					<p style="margin-top: 5px;">R$ <span class="valor">14.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+										
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Hot Dog</p>
+					<p style="margin-top: 5px;">R$ <span class="valor">8.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+			<div class="container-produtos">
+				<div>
+					<p class="acai-text">Dog Pizza</p>
+					<p style="margin-top: 5px;">R$ <span class="valor">10.00</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>
+                        <div class="container-produtos">
+				<div>
+					<p class="acai-text">Refri</p>
+					<p style="margin-top: 5px;">R$ <span class="valor">3.50</span></p>
+				</div>
+				<div class="disp-flex-col">
+					<div>
+						<button class="remover margin-right"></button>
+						<button class="adicionar"></button>
+					</div>
+					<p class="contador">0</p>
+				</div>
+			</div>			
+		</section>
+		
+		<section class="disp-flex">
+			<p class="total">TOTAL: </p>
+			<p class="valor-total">R$ <span class="calc-valor"></span></p>			
+		</section>
+		
+		<div class="disp-flex" style="margin-top: 5px;">
+			<button class="reload"></button>			
+		</div>
+				
+		<section class="calc-troco">
+			<div class="disp-flex">
+				<input type="tel" class="dinheiro" maxlength="5">
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Quantidade</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody>			
+				<tfoot>
+					<tr>
+						<td colspan="2">TOTAL</td>
+						<td>R$ <span class="calc-valor"></span></td>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<section class="disp-flex margin-top-30px">
+				<p class="total">TROCO: </p>
+				<p class="valor-total">R$ <span id="troco-valor"></span></p>			
+			</section>
+		</section>
+		
+		<script src="js/jquery.js"></script>
+		<script>			
+			result = 0;
+			troco = 0;
+			var contador;			
+			$(".adicionar").click(function(){								
+				result += Number(parseFloat($(this).parent().parent().parent(".container-produtos").find(".valor").text()));				
+				contador = parseFloat($(this).parent().siblings(".contador").text());
+				$(this).parent().siblings(".contador").text(++contador);
+				$(".calc-valor").text(result.toFixed(2));
+				calculaTroco();
+			});
+			
+			$(".remover").click(function(){
+				if($(this).parent().siblings(".contador").text() > 0){
+					result -= Number(parseFloat($(this).parent().parent().parent(".container-produtos").find(".valor").text()));				
+					contador = parseFloat($(this).parent().siblings(".contador").text());
+					$(this).parent().siblings(".contador").text(--contador);
+					$(".calc-valor").text(result.toFixed(2));
+					calculaTroco();
+				}
+			});
+			
+			$(".reload").click(function(){
+				reset();				
+			});
+			
+			function reset(){
+				$(".contador").text("0");
+				$(".calc-valor").text("");
+				$("#troco-valor").text("");
+				$(".dinheiro").val("");
+				contador = 0;
+				result = 0;
+				troco = 0;
+				$("tbody").html("");
+			}
+			
+			$(".icone-troco").click(function(){						
+				if($(".calc-troco").hasClass("show-calc-troco")){
+					 reset();
+				}
+				carregaItens();
+				$(".dinheiro").focus();				
+				//$("body").toggleClass("overflow-hidden");
+				$(".calc-troco").toggleClass("show-calc-troco");				
+			});
+			
+			$("input[type='tel']").on("keyup", function(){//				
+					troco = $(this).val().replace(/(\d\d)(?=(\d\d))/g, "$1.");					
+					$(this).val(troco);					
+					calculaTroco();
+			});
+			
+			function calculaTroco(){
+				$("#troco-valor").text((troco - result).toFixed(2));
+			}
+			
+			function carregaItens(){
+				$(".contador").each(function(){
+					if($(this).text() != "0"){						
+						$("tbody").append("<tr>"
+															+"<td>"+ $(this).parent().parent(".container-produtos").find(".acai-text").text() +"</td>"+
+															"<td>"+ $(this).text() +"</td>"+
+															"<td>"+ "R$ " + $(this).parent().parent(".container-produtos").find(".valor").text() +"</td>"+
+															"</tr>");
+					}	
+				});
+			}			
+		</script>		
+</body>
+
+<!--<body>
+    <style>
+        .secao{
+            height: 235px;
+            background-color: gray;
+            overflow: hidden;
+            transition: height .5s ease;
+        }
+        .card{
+            background-color: brown;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 30px 0 30px 0;
+        }
+        button{
+            width: 100%;
+            background-color: green;
+            border: none;
+            color: black;
+            text-align: center;
+            height: 40px;
+            font-size: 20px;
+        }
+    </style>
+    <section class="secao">
+        <div class="grupo1">
+            <div class="card">
+                <h3>Titulo CARD 1</h3>
+                <p>CARD 1</p>
+                <a href="javascript:">aplicar</a>
+            </div>
+            <div class="card">
+                <h3>Titulo CARD 2</h3>
+                <p>CARD 2</p>
+                <a href="javascript:">aplicar</a>
+            </div>
+        </div>
+        
+        <div class="grupo2" aria-hidden="true">
+            <div class="card">
+                <h3 tabindex="-1">Titulo CARD 3</h3>
+            </div>
+            <div role="text">
+                <p>CARD 3</p>
+            </div>
+            <div>
+                <a href="javascript:">aplicar</a>
+            </div>
+            <div class="card">
+                <h3>Titulo CARD 4</h3>
+            </div>
+            <div role="text">
+                <p>CARD 4</p>
+            </div>
+            <div>
+                <a href="javascript:">aplicar</a>
+            </div>
+            <div class="card">
+                <h3>Titulo CARD 5</h3>
+            </div>
+            <div role="text">
+                <p>CARD 5</p>
+            </div>
+            <div>
+                <a href="javascript:">aplicar</a>
+            </div>
+        </div>
+    </section>
+    <button class="botao" onclick="verMais()">ver mais</button>
+    
+    <script>
+        var secao = document.getElementsByClassName('secao');
+        var grupo1 = document.getElementsByClassName('grupo1');
+        var grupo2 = document.getElementsByClassName('grupo2');
+        var botao = document.getElementsByClassName('botao');
+        var primeiroFilho = document.querySelector(".grupo2 .card:first-child h3");
+        
+        console.log('secao', secao);
+        console.log('grupo1', grupo1);
+        console.log('grupo2', grupo2);
+        console.log('grupo2', botao);
+        console.log('primeiroFilho', primeiroFilho);
+        
+        function verMais(){
+            console.log('clicou!');
+            grupo2[0].setAttribute("aria-hidden", "false");
+            secao[0].style.height = "600px";
+            setTimeout(function(){
+                botao[0].remove();
+            }, 800);
+            setTimeout(function(){
+                primeiroFilho.focus();
+                console.log(document.activeElement);
+            }, 800);
+        }
+    </script>
+</body>-->
+</html>
